@@ -1,0 +1,153 @@
+  .isf-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    max-height: 100vh;
+    box-sizing: border-box;
+  }
+  .dribbleImage{
+    height:84px;
+    width:140px;
+    object-fit: cover;
+    background-color: #fff;
+  }
+  .left-page{
+    background-color:#faf5f5;
+    height: 34px;
+    width:43px;
+    margin-left:30px;
+    padding-top:15px;
+    border-radius: 5px;
+    cursor:pointer;
+  }
+
+  .form-wrapper {
+    text-align: center;
+  }
+  
+  .dribbble-logo {
+    margin-bottom: 20px;
+    display:flex;
+    align-items: center;
+  }
+  
+  .form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .form-description {
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .interest-signup-form {
+    
+  }
+  .interest-image{
+    height:60%;
+    width:70%;
+    object-fit: cover;
+    margin:4px;
+  }
+.interest-check{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    appearance: none; 
+    transition: background-color 0.2s ease-in-out;
+}
+.clicked{
+    border-color:#ea4b8b !important;
+    border-width:2px !important;
+}
+.finish-btn{
+    background-color: #ea4b8b;
+    color: #fff;
+    border-radius:9px;
+    outline: none;
+    border:none;
+    height:43px;
+    width:10vw;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.finish-btn:hover{
+    background-color: #d0427e; 
+    cursor:pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+  .interests{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-evenly;
+    width:100vw;
+  }
+  
+  .form-group1,.form-group2,.form-group3 {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 27%;
+    border: 1px solid #e0dfdc;
+    border-radius:9px;
+  }
+  
+  .form-group input {
+    margin-right: 10px;
+  }
+  .interest-check2{
+    margin-right: 10px;
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    appearance: none; 
+    background-color: #e0dfdc;
+    background-color:transparent;
+    border: 1px solid #cfcdca;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .form-group label {
+    cursor: pointer;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .interest-checked{
+    background-color:#ea4b8b;
+    border: none;
+}
+
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+    .interests{
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      gap: 15px;
+      justify-content: space-evenly;
+    }
+    .form-group1,.form-group2,.form-group3 {
+      width: 67%;
+      border: 1px solid #e0dfdc;
+      border-radius:9px;
+      padding:10px;
+    }
+    .finish-btn{
+      width:180px;
+  }
+  }
+  

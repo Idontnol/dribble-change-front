@@ -1,0 +1,15 @@
+.not-found-image{
+    margin-top:5vw;
+    height:27vw;
+    width:30vw;
+}
+.not-found-ul{
+    list-style-type:none;
+}
+.not-found{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    height:100vh;
+}

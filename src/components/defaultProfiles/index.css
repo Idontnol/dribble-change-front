@@ -1,0 +1,55 @@
+.defaultProfileContainer{
+    height:40vh;
+    width:38vw;
+    
+    position:absolute;
+    left:30%;
+    top:30%;
+    background-color:white;
+
+}
+.profiles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.defaultImage{
+    height:70px;
+    width:110px;
+    object-fit: contain;
+    margin:0px;
+    cursor: pointer;
+}
+.defaultImage:hover{
+    cursor:"pointer";
+}
+.dpContainer{
+    height:100vh;
+    width:100vw;
+    position:fixed;
+    z-index:2;
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0,0,1,0.4);
+    top:0;
+}
+.closer{
+    background-color:rgba(0,0,1,0.1);
+    transition: background-color 0.2s ease-in-out;
+}
+.closer:hover{
+    background-color:rgba(0,0,1,0.2);
+}
+@media (max-width: 900px){
+    .defaultProfileContainer{
+    height:50vh;
+
+    }
+}
+@media (max-width: 590px){
+    .defaultProfileContainer{
+    width:60vw;
+
+    }
+}

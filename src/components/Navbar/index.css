@@ -1,0 +1,122 @@
+.navbar-container{
+    display:flex;  
+    width:100vw; 
+    overflow-x:hidden;
+    box-sizing: border-box;
+}
+.navbar-dribble-icon{
+    height:34px;
+    width:120px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.menu-icon{
+    cursor:pointer;
+    height:34px;
+    width:34px;
+}
+.navbar-left{
+    display:flex;   
+    list-style-type:none;
+    width:61%;
+    justify-content: space-evenly;
+}
+.navbar-right{
+    display:flex; 
+    align-items: center;
+    width:36%;  
+    justify-content: space-evenly;
+}
+.search-container{
+    background-color:#f2f1f0;
+    border-radius: 6px;
+    display:flex;
+    height:38px;
+    align-items:center;
+    padding-left:10px;
+}
+.search-input{
+    border:none;
+    outline:none;
+}
+.upload-btn{
+    background-color: #ea4b8b;
+    color: #fff;
+    border-radius:9px;
+    outline: none;
+    border:none;
+    height:40px;
+    width:7vw;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.uploadBtn:hover {
+    background-color: #d0427e; 
+   cursor:pointer;
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+.navbar-profile{
+    height:31px;
+    width:31px;
+    object-fit: cover;
+}
+.navbar-left-small{
+    display:none;
+}
+.menuCard{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:8%;
+    left:2%;
+    list-style:none;
+    justify-content:flex-start;
+    z-index:10;
+    padding:0px;
+    padding-left:5px;
+    background-color:#ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: height 0.3s ease-in-out;
+}
+.menuCard li{
+    padding-left:0;
+    text-align: left;
+    margin-bottom:2px;
+    cursor:pointer;
+}
+.menuCard li:hover{
+    color:#636362;
+}
+
+@media (max-width: 960px){
+    .navbar-left{
+        display:none;
+    }
+    .navbar-left-small{
+        display:flex;
+        list-style: none;
+        align-items: center;
+        /* width:34%; */
+    }
+    .upload-btn{
+        width:100px;
+    }
+    .navbar-profile{
+        height:46px;
+        width:46px;
+    }
+    .navbar-right{
+        width:59%;  
+    }
+    .upload-btn{
+        display:none;
+    }
+    .navbar-container{
+        justify-content:space-evenly;
+        padding:4px;
+    }
+    .smea{
+        width:110px;
+        height:;
+    }
+}

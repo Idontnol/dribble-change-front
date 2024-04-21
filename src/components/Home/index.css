@@ -1,0 +1,98 @@
+.home-menubar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.home-menubar ul{
+    list-style-type: none;
+    display: flex;
+    gap:2%;
+    align-items: center;
+    justify-content: space-evenly;
+    width:80%;
+    overflow: hidden;
+}
+.home-menubar ul li{
+    font-weight: 640;
+
+    border-radius:30px;
+    padding:10px 20px;
+}
+.home-menubar ul li:hover:not(.active){
+    background-color: #f2f2f2;
+}
+.active{
+    background-color: #e6e1e1;
+}
+.eachImage{
+    display: flex;
+    flex-direction: column;
+}
+/* .unsplashImage{
+    height:40%;
+    width:30%;
+} */
+.imageContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imageContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    gap:1vw;
+    width:90vw;
+    padding:1px;
+}
+.eachImage{
+    margin:2px;
+    display: flex;
+    flex-direction: column;
+}
+.eachImage:hover{
+    transform:scale(0.9);
+    transition:0.4s ease-in-out ;
+}
+.description{
+    font-size:26px;
+}
+span{
+    display: inline;
+}
+.unsplashImage{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius:7px;
+}
+.heroContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imageText{
+    font-size:17px;
+}
+.home-menubar span{
+    border:1px solid #ccc;
+    border-radius:20px;
+    padding:5px 14px;
+    display:flex;
+    align-items:center;
+    gap:2px;
+}
+.drop{
+    height:23px;
+    width:26px;
+}
+.more-btn{
+    padding:5px 15px;
+    border-radius:20px;
+    background-color:#f02ee9;
+    color:#fff;
+    border:none;
+    outline:none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    cursor:pointer;
+    margin-bottom:10px;
+}

@@ -1,0 +1,54 @@
+.notification-bar {
+    position: fixed;
+    top: 18%;
+    left: 71% !important;
+    /* width: 25%; */
+    height: 42px; /* Adjust height as needed */
+    background-color: #f0f9ff;  /* Light blue background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    padding-right: 30px;
+    transform: translateY(-100%); /* Initially hidden off-screen */
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+    border-radius:10px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2); /* Initial shadow (no offset) */
+  animation: notification-shadow 2s ease-in-out forwards;
+}
+@keyframes notification-shadow {
+    from {
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2); /* Start with no offset */
+    }
+    to {
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Animate to desired shadow */
+    }
+  }
+#notification-bar.show {
+    transform: translateY(0); /* Animate to visible position */
+}
+
+#notification-message {
+    margin: 0;
+    font-size: 16px;
+    color: #333; /* Darker text for readability */
+}
+.hide{
+    display: none;
+}
+.successNotify{
+    background-color: green;
+}
+.failureNotify{
+    background-color:red ;
+}
+.notification-bar p{
+    color:white;
+}
+.close-notification{
+  background-color:rgba(0,0,1,0.1);
+} 
+.close-notification:hover{
+    background-color:rgba(0,0,1,0.2);
+  }
